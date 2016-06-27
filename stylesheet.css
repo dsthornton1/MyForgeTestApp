@@ -1,0 +1,103 @@
+/* paragraph styling */
+* {
+	border: 1px dashed blue;
+}
+
+p {
+	color: blue;
+}
+
+div {
+/*	display:inline-block; */
+	height:200px;
+	width:625px;
+	border: 1px solid black;
+	border-radius: 20px;
+	background-color:cyan;
+}
+
+#header{
+	z-index: 1;
+	position: fixed;
+	width: 97.5%;
+	height:50px;
+	border-radius:0px;
+	margin-top:-10px;
+}
+
+#footer{
+	width:97.5%;
+	height:50px;
+	position:relative;
+	clear:both;
+	border-radius:0px;
+}
+
+#one{
+	position:relative;
+	display:inline-block;
+	margin-top:50px;
+}
+
+#two{
+	position:relative
+	display:inline-block;
+	float:right;
+	margin-top:50px;
+}
+
+/* span styling.  Typically hexadecimal color values are used for non-standard colors.  */
+/* search for hex color palette to find hex values */
+
+/* font size em is relative measure, as opposed to absolute px (pixels)
+   1em is the font size normally used, so 2em is twice as big. */
+
+h1 {
+    color:#ff9999;
+    font-family:cursive;
+}
+
+h2 {
+    color:blue;
+}
+
+p {
+    font-family:Courier;
+    font-size:1.25em;
+}
+
+/* Adding psuedo selector behavior.  In this example when passing the cursor over paragraph
+   text it will appear bold. Here are some useful ones for links:
+	     1. a:link - An unvisited link
+			 2. a:visited - A visited link
+			 3. a:hover - A link you're hovering a mouse over.
+*/
+p:hover {
+	font-weight: bold;
+}
+
+span {
+    background-color:yellow;
+}
+
+/* Types of selectors:
+	    1. CSS Selectors - p
+			2. Cascading (nested) - body p
+			3. Universal Selector  - *
+			4. Class and ID selectors - (see below)
+			5. Pseudo selectors - link, visited or hover.
+*/
+.classA {
+	color:red;
+}
+
+#id1 {
+	color:green;
+}
+
+/* Positioning
+		Margin, Padding, Border
+		Float=[right, left]
+		Clear=[right, left, both]
+		Position=[absolute, relative, fixed]
+*/
